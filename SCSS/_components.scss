@@ -51,10 +51,40 @@
   display: flex;
   align-items: stretch;
   min-height: 400px;
-  background: linear-gradient(rgba(18, 11, 82, 0.2), rgba(8, 4, 41, 0.95)), url("../../Images/image1.jpg") center / cover;
+  background: linear-gradient(rgba(18, 11, 82, 0.2), rgba(8, 4, 41, 0.95));
 
 }
 
+.hero-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-media {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+    border-radius: 10px;  
+    box-shadow: $shadow;
+    width: min(300px, 100%);
+    animation: imagefadeup 500ms ease-out both;
+}
+
+@keyframes imagefadeup{
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+   opacity: 1;
+   transform: translateY(0); 
+  }
+}
 
 .hero-eyebrow {
   font-weight: bold;
@@ -74,7 +104,7 @@
 .hero-actions {
   display: flex;
   gap: 12px;
-  margin-top: auto;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
