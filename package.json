@@ -1,0 +1,12 @@
+{
+  "name": "Project 1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "sass scss/main.scss public/CSS/global.css --no-source-map --style=compressed",
+    "watch:css":"sass scss/main.scss public/CSS/global.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}

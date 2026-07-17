@@ -1,0 +1,10 @@
+@use "variables" as *;
+html, body {
+  padding: $padding;
+}
+body {
+  color: $text;
+  font-family: Arial;
+  background:
+    $bg
+}

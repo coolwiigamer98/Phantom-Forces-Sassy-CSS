@@ -1,0 +1,14 @@
+@use "variables" as *;
+@mixin card{
+  background: $panel;
+  border: 1px solid $panelBorder;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+@mixin button-style {
+  @include card;
+  background-color: $primaryBgColour;
+  text-decoration: none;
+  color: white;
+}
